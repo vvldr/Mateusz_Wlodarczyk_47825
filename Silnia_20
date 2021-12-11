@@ -1,16 +1,19 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Silnia_20_
+namespace Zadanie2_1
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            int silnia = 1;
-            int liczba = 20;
-            
+            long  silnia = 1;
+            long liczba = 20;
 
-            for (int i = 1; i <= liczba; i++)
+            for (long i = 1; i <= liczba; i++)
             {
 
                 silnia *= i;
