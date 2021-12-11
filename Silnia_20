@@ -1,0 +1,26 @@
+using System;
+
+namespace Silnia_20_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int silnia = 1;
+            int liczba = 20;
+            
+
+            for (int i = 1; i <= liczba; i++)
+            {
+
+                silnia *= i;
+
+            }
+
+            Console.WriteLine(silnia);
+
+
+            Console.ReadKey();
+        }
+    }
+}
