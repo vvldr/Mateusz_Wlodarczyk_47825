@@ -1,6 +1,6 @@
 using System;
 
-namespace Zadanie2_1
+namespace Zadanie_1
 {
     internal class Program
     {
