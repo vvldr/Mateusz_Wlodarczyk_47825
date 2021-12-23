@@ -1,0 +1,17 @@
+using System;
+
+namespace zadanie3
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Wpisz liczbe nr 1");
+            int liczba_x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wpisz liczbe nr 2");
+            int liczba_y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(liczba_x * liczba_y);
+        }
+    }
+}
