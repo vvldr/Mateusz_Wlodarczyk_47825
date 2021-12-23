@@ -1,6 +1,6 @@
 using System;
 
-namespace Zad_3_b
+namespace Zadanie3c
 {
     class MainClass
     {
@@ -11,7 +11,7 @@ namespace Zad_3_b
             Console.WriteLine("Wpisz liczbe nr 2");
             int liczba_y = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Wprowadz znak '+' dla dodawania, '-' dla odejmowania, '*' dla mnożenia");
+            Console.WriteLine("Wprowadz znak '+' dla dodawania, '-' dla odejmowania, '*' dla mnożenia lub '/' dla dzielenia");
             char znak = Console.ReadLine()[0];
 
 
@@ -34,9 +34,19 @@ namespace Zad_3_b
                     Console.WriteLine(liczba_x * liczba_y);
                     break;
 
+                case '/':
+
+                    if(liczba_j == 0 || liczba_d == 0)
+                    {
+                        Console.WriteLine("Nie można dzielić przez 0, sprobuj ponownie!");
+                    }
+                    else
+                    Console.WriteLine(liczba_x / liczba_y);
+                    break;
+
                 default:
                     // brak
-                    Console.WriteLine("Brak możliwości obsługi takiego znaku!");
+                    Console.WriteLine("Nie obsługuję takiego znaku!");
                     break;
             }
         }
