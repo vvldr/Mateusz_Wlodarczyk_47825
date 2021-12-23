@@ -1,0 +1,32 @@
+using System;
+
+namespace Zadanie3a
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Wpisz liczbe nr 1");
+            int liczba_x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wpisz liczbe nr 2");
+            int liczba_y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Wprowadz znak '+' dla dodawania lub znak '-' dla odejmowania");
+            char znak = Console.ReadLine()[0];
+
+
+            if (znak == '-') {
+
+                Console.WriteLine(liczba_x - liczba_y);
+
+            }else if(znak == '+')
+            {
+                Console.WriteLine(liczba_x + liczba_y);
+            }
+            else
+            {
+                Console.WriteLine("nie obsługuję tego znaku");
+            }
+        }
+    }
+}
